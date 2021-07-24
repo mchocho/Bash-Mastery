@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Author: Malesela Chocho
+# Date Created: 24/07/2021 
+# Last Modifed: 24/07/2021 
+
+# Description:
+# Creates a backup in current directory of all files in the ./tmp directory
+
+tar -cvf ~/bash/Bash-Mastery/01-Just-Like-Movie-Scripts/Backup-script/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ./tmp/* 2>/dev/null
+exit 0
