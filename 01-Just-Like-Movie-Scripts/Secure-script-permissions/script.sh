@@ -14,7 +14,7 @@
 # has all permissions and everyone else can only read the file.
 
 #      chmod 777 script.sh
-# The above will provide all permissions to the to all users. 
+# The above will provide all permissions to all users. 
 
 #      chmod 755 script.sh
 # The above will allow other users to read and run the script
