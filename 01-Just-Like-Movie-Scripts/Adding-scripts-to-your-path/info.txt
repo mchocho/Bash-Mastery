@@ -1,0 +1,27 @@
+# The system's path is a variable that tells the shell
+# which directories to search for executable files in.
+
+# When you run a command in your terminal, the shell looks
+# for that command in the directories defined in its PATH
+# variable to see if it has a command that it can run.
+# If it doesn't find an executable file with the same name
+# as the command then you will get a "command not found" error.
+
+# The benefit of adding a script to your system's path is that
+# they then can be run from anywhere in your system simply
+# by typing in the name of your script.
+
+# To take a look at your system's path in your terminal just run:
+    echo "$PATH"
+
+# To add a new directory to your PATH variable you can edit the
+# .profile found in the root directory. To include our ./script
+# directory just include the following at the bottom of the .profile
+
+export PATH="$PATH:$HOME/Bash-Mastery/01-Just-Like-Movie-Scripts/Adding-scripts-to-your-path/scripts"
+
+# This will append the scripts directory to the end of the PATH
+# variable. To update the profile file just reboot the terminal
+# or you can run
+
+source ~/.profile
