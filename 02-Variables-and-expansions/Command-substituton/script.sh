@@ -15,4 +15,4 @@ time=$(date +%H:%m:%S)
 
 echo "Hey there $USER, the time right now is $time"
 
-exit 9
+exit 0
