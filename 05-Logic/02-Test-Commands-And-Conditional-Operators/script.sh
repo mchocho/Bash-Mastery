@@ -44,12 +44,12 @@
 # ii) String operators 
 #       These operators are used to compare strings
 
+a=hello
+b=goodbye
+
 # [ = ]
 # The above test tells the shell to test if 2 strings are
 # equal to one another.
-
-a=hello
-b=goodbye
 
 [[ $a = $b ]] ; echo "Is str \"$a\" equal to \"$b\": $?"
 
@@ -57,3 +57,18 @@ b=goodbye
 # The above test tells the shell to test if 2 strings are
 # not equal to one another
 [[ $a != $b ]] ; echo "Is str \"$a\" not equal to \"$b\": $?"
+
+# [ -z ]
+# The above test tell the shell to test if a single string
+# is empty. It basically compares the string you provide
+# with an empty string. Think of z as zero for empty
+[[ -z $c ]] ; echo "Is str \"$c\" an empty string: " $?
+
+[[ -z $a ]] ; echo "Is str \"$a\" an empty string: " $?
+
+# [ -n ]
+# The above test tells the shell to test if a string is not
+# empty. Think of n as not zero or not empty
+[[ -n $c ]] ; echo "Is str \"$c\" not empty: " $?
+
+[[ -n $b ]] ; echo "Is str \"$b\" not empty: " $?
