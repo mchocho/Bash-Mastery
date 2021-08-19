@@ -38,8 +38,8 @@
 
 # -gt tests for gREATER tHAN
 # -lt tests for lESS tHAN
-# -geq tests for gREATER THAN OR eqUAL TO
-# -leq tests for lESS THAN OR eqUAL TO
+# -ge tests for gREATER THAN OR eQUAL TO
+# -le tests for lESS THAN OR eQUAL TO
 
 # ii) String operators 
 #       These operators are used to compare strings
