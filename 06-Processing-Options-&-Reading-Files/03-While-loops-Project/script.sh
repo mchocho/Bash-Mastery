@@ -7,7 +7,7 @@ while getopts "m:s:" opt; do
   case "$opt" in
     m) minutes=$(($OPTARG * 60));;
     s) seconds=$OPTARG;;
-    ?) echo "Unknown option $option.";;
+    \?) echo "Unknown option $option.";;
   esac
 done
 
