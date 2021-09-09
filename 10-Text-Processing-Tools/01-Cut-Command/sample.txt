@@ -1,0 +1,4 @@
+Linux is operating system
+echo command is one of the Linux based command
+Many people in India has been affected by Corona Virus
+Testing helps to identify, understand and eliminated software defect.
