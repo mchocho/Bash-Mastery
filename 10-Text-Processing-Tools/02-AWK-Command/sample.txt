@@ -1,0 +1,7 @@
+Name,Marks,Max Marks
+Ed,200,1000
+Edd,500,1000
+Eddy,1000
+Kevin,800,1000
+Plank,600,1000
+Sarah,400,1000
