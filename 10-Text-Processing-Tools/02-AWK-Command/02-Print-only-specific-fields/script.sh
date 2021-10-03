@@ -15,6 +15,6 @@ if ! [ "$1" -eq "$1" ] 2> /dev/null || ! [ "$2" -eq "$2" ] 2> /dev/null; then
 fi
 
 echo "In this example, we print fields $1 and $2"
-echo "Command: awk -F \",\" '{print $1, $2}' ../sample.txt"
+echo "Command: awk -F \",\" '{print \$$1, \$$2}' ../sample.txt"
 echo
-awk -F "," '{print $1, $2}' ../sample.txt
+awk -F "," "{print \$$1, \$$2;}" ../sample.txt
