@@ -1,8 +1,8 @@
 #!/bin/bash
 
 printUsage() {
-  echo "Usage $0 -n"
-  echo "    where -n is the values to match using space as a delimeter."
+  echo "Usage $0 str1 ... strn"
+  echo "    where str is a space seperated list of values to match."
 
   exit 1
 }
