@@ -10,4 +10,15 @@
 # input text’s automatic output so that only matching 
 # lines are output.
 
-sed -n '/Method/p' ../sample.txt
+function printUsage() {
+  echo "Usage $0 str"
+  echo "    Where str is the string to search for."
+
+  exit 1
+}
+
+if [ -z "$1" ]; then
+  printUsage
+fi
+
+sed -n "/$1/p" ../sample.txt
